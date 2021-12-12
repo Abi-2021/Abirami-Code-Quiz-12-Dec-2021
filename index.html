@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Code Quiz</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div>
+            <a href="/highscores.html" id="highscore-btn">View Hightscores</a>
+        </div>
+        <div class="timer-container">
+            <span>Time:</span> <span id="timer">0</span>
+        </div>
+    </nav>
+</header>
+
+<section id="welcome_section">
+    <div class="container">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+            Try to answer the following code-related questions within the time
+            limit. Keep in mind that incorrect answers will penalize your
+            scoretime by ten seconds!
+        </p>
+        <a href="#" id="start_quiz" class="btn">Start Quiz</a>
+    </div>
+</section>
+
+<section id="question_section" class="hide">
+    <div class="container">
+        <h1 id="question">What is the answer to this question</h1>
+        <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="1">Choice 1</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="2">Choice 2</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="3">Choice 3</p>
+        </div>
+        <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="4">Choice 4</p>
+        </div>
+    </div>
+</section>
+<section id="scoreboard_section" class="hide">
+    <div class="container" id="scoreboard">
+        <h1>Well done!</h1>
+        <p>Your final score is <span id="score">0</span></p>
+        <form class="end-form-container">
+            <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your name"
+                    id="username"
+            />
+            <button class="btn" id="saveScoreBtn" type="submit">Save</button>
+        </form>
+    </div>
+</section>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+:root {
+    background-color: rgb(29, 26, 26);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square', cursive;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+header {
+    margin: 20px 15px;
+}
+
+input {
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.hide {
+    display: none;
+}
+.timer-container {
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+    gap: 10px;
+}
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 32px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.container > p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn {
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(
+            90deg,
+            rgb(18, 92, 255),
+            0%,
+            rgb(0, 102, 255) 100%
+    );
+    padding: 32px 40px;
+    max-width: 100%;
+    max-width: fit-content;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+#highscore-btn {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Questions */
+.choice-container {
+    display: flex;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 48px;
+    background: rgb(18, 93, 255);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 20px 0 rgba(6, 103, 247, 0.5);
+}
+
+.choice-text {
+    width: 100%;
+    padding: 32px;
+}
+
+.choice-prefix {
+    padding: 32px 40px;
+    color: #fff;
+}
+
+.correct {
+    background: linear-gradient(
+            32deg,
+            rgb(11, 223, 36) 0%,
+            rgb(41, 232, 111) 100%
+    );
+}
+
+.incorrect {
+    background: linear-gradient(
+            32deg,
+            rgba(230, 29, 29, 1) 0%,
+            rgba(224, 11, 11, 1) 100%
+    );
+}
+
+/* Score card */
+
+#scoreboard_section p {
+    font-size: 30px;
+}
+
+#scoreboard_section p span {
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.end-form-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
